@@ -16,6 +16,7 @@
 		0BBB63D62AE77C8F00A47052 /* StackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BBB63D52AE77C8F00A47052 /* StackView.swift */; };
 		0BBB63D82AE7B53900A47052 /* FeedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BBB63D72AE7B53900A47052 /* FeedView.swift */; };
 		0BBB63DA2AE7B54700A47052 /* FeedCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BBB63D92AE7B54700A47052 /* FeedCell.swift */; };
+		0BBB63DC2AE7CA2700A47052 /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BBB63DB2AE7CA2700A47052 /* SearchView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +30,7 @@
 		0BBB63D52AE77C8F00A47052 /* StackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StackView.swift; sourceTree = "<group>"; };
 		0BBB63D72AE7B53900A47052 /* FeedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedView.swift; sourceTree = "<group>"; };
 		0BBB63D92AE7B54700A47052 /* FeedCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedCell.swift; sourceTree = "<group>"; };
+		0BBB63DB2AE7CA2700A47052 /* SearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -143,6 +145,7 @@
 		0BBB63CB2AE7672700A47052 /* Search */ = {
 			isa = PBXGroup;
 			children = (
+				0BBB63DB2AE7CA2700A47052 /* SearchView.swift */,
 			);
 			path = Search;
 			sourceTree = "<group>";
@@ -260,6 +263,7 @@
 				0BBB63B72AE75B8200A47052 /* ContentView.swift in Sources */,
 				0BBB63DA2AE7B54700A47052 /* FeedCell.swift in Sources */,
 				0BBB63B52AE75B8200A47052 /* InstagramCloneApp.swift in Sources */,
+				0BBB63DC2AE7CA2700A47052 /* SearchView.swift in Sources */,
 				0BBB63D12AE76FCB00A47052 /* MainTabView.swift in Sources */,
 				0BBB63D82AE7B53900A47052 /* FeedView.swift in Sources */,
 				0BBB63D62AE77C8F00A47052 /* StackView.swift in Sources */,
