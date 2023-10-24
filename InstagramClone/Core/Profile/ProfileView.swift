@@ -56,21 +56,60 @@ struct ProfileView: View {
                     .padding(.horizontal)
                     
                     //action button
-                    
-                    Button {
+                    HStack {
+                        Button {
+                           
+                        } label: {
+                            Text("Edit Profile")
+                                .font(.subheadline)
+                                .fontWeight(.semibold)
+                                .frame(width: 160, height: 32)
+                                .foregroundColor(.black)
+                                .overlay (
+                                    RoundedRectangle(cornerRadius: 6).stroke(Color.gray, lineWidth: 1)
+                                )
+                        }
                         
-                    } label: {
-                        Text("Edit Profile")
-                            .font(.subheadline)
-                            .fontWeight(.semibold)
-                            .frame(width: 360, height: 32)
-                            .foregroundColor(.black)
-                            .overlay (
-                                RoundedRectangle(cornerRadius: 6).stroke(Color.gray, lineWidth: 1)
-                            )
+                        Button {
+                            
+                        } label: {
+                            Text("Share Profile")
+                                .font(.subheadline)
+                                .fontWeight(.semibold)
+                                .frame(width: 160, height: 32)
+                                .foregroundColor(.black)
+                                .overlay (
+                                    RoundedRectangle(cornerRadius: 6).stroke(Color.gray, lineWidth: 1)
+                                )
+                        }
+                        
+                        Button {
+                            
+                        } label: {
+                            Image(systemName: "person.badge.plus")
+                                .font(.subheadline)
+                                .fontWeight(.semibold)
+                                .frame(width: 30, height: 32)
+                                .foregroundColor(.black)
+                                .overlay (
+                                    RoundedRectangle(cornerRadius: 6).stroke(Color.gray, lineWidth: 1)
+                                )
+                        }
+                        
                     }
+                    Spacer()
                     
-                    Divider()
+                    HStack {
+                        Image(systemName: "squareshape.split.3x3")
+                            .padding(.horizontal, 50)
+                        Image(systemName: "play.rectangle.on.rectangle")
+                            .padding(.horizontal, 50)
+                        Image(systemName: "tag.square")
+                            .padding(.horizontal, 50)
+                    }
+//                    Divider()
+//                    .padding()
+                    Spacer()
                 }
                 
             // post grid view
