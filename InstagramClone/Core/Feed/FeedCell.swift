@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct FeedCall: View {
+struct FeedCell: View {
     var body: some View {
         VStack {
             // image + username
@@ -93,5 +93,5 @@ struct FeedCall: View {
 }
 
 #Preview {
-    FeedCall()
+    FeedCell()
 }
