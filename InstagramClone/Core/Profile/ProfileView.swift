@@ -14,13 +14,24 @@ struct ProfileView: View {
             VStack {
             // pic an stats
             HStack {
-                
+                Image("profilePicture")
+                    .resizable()
+                    .scaledToFit()
+                    .frame(width: 80, height: 80)
+                    .clipShape(Circle())
             }
             
             // name an bio
-            VStack {
+                VStack(alignment: .leading, spacing: 4) {
+                Text("Lewis Hamilton")
+                    .font(.footnote)
+                    .fontWeight(.semibold)
                 
+                Text("Still rising")
+                    .font(.footnote)
             }
+            .frame(maxWidth: .infinity, alignment: .leading)
+            .padding(.horizontal)
             
             //action button
                 
