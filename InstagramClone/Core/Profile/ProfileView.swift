@@ -9,7 +9,39 @@ import SwiftUI
 
 struct ProfileView: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        VStack {
+            // header
+            VStack {
+            // pic an stats
+            HStack {
+                
+            }
+            
+            // name an bio
+            VStack {
+                
+            }
+            
+            //action button
+                
+            Button {
+                    
+            } label: {
+                 Text("Edit Profile")
+                    .font(.subheadline)
+                    .fontWeight(.semibold)
+                    .frame(width: 360, height: 32)
+                    .overlay (
+                        RoundedRectangle(cornerRadius: 6).stroke(Color.gray, lineWidth: 1)
+                    )
+            }
+            
+            Divider()
+        }
+            
+        // post grid view
+            
+        }
     }
 }
 
