@@ -64,10 +64,11 @@ struct ProfileView: View {
                                 .font(.subheadline)
                                 .fontWeight(.semibold)
                                 .frame(width: 160, height: 32)
+                                .background(Color(.systemGray6))
                                 .foregroundColor(.black)
-                                .overlay (
-                                    RoundedRectangle(cornerRadius: 6).stroke(Color.gray, lineWidth: 1)
-                                )
+//                                .overlay (
+//                                    RoundedRectangle(cornerRadius: 6).stroke(Color.gray, lineWidth: 1)
+//                                )
                         }
                         
                         Button {
@@ -77,10 +78,11 @@ struct ProfileView: View {
                                 .font(.subheadline)
                                 .fontWeight(.semibold)
                                 .frame(width: 160, height: 32)
+                                .background(Color(.systemGray6))
                                 .foregroundColor(.black)
-                                .overlay (
-                                    RoundedRectangle(cornerRadius: 6).stroke(Color.gray, lineWidth: 1)
-                                )
+//                                .overlay (
+//                                    RoundedRectangle(cornerRadius: 6).stroke(Color.gray, lineWidth: 1)
+//                                )
                         }
                         
                         Button {
@@ -91,9 +93,10 @@ struct ProfileView: View {
                                 .fontWeight(.semibold)
                                 .frame(width: 30, height: 32)
                                 .foregroundColor(.black)
-                                .overlay (
-                                    RoundedRectangle(cornerRadius: 6).stroke(Color.gray, lineWidth: 1)
-                                )
+                                .background(Color(.systemGray6))
+//                                .overlay (
+//                                    RoundedRectangle(cornerRadius: 6).stroke(Color.gray, lineWidth: 1)
+//                                )
                         }
                         
                     }
