@@ -24,6 +24,7 @@
 		0BBB63E62AE8746C00A47052 /* CreatePasswordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BBB63E52AE8746C00A47052 /* CreatePasswordView.swift */; };
 		0BBB63E82AE875F200A47052 /* CompleteSignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BBB63E72AE875F200A47052 /* CompleteSignUpView.swift */; };
 		0BBB63EA2AE8C06A00A47052 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BBB63E92AE8C06A00A47052 /* User.swift */; };
+		0BBB63EC2AE9324B00A47052 /* CurrentUserProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BBB63EB2AE9324B00A47052 /* CurrentUserProfile.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -45,6 +46,7 @@
 		0BBB63E52AE8746C00A47052 /* CreatePasswordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreatePasswordView.swift; sourceTree = "<group>"; };
 		0BBB63E72AE875F200A47052 /* CompleteSignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompleteSignUpView.swift; sourceTree = "<group>"; };
 		0BBB63E92AE8C06A00A47052 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		0BBB63EB2AE9324B00A47052 /* CurrentUserProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentUserProfile.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -158,6 +160,7 @@
 			isa = PBXGroup;
 			children = (
 				0BBB63D22AE7744300A47052 /* ProfileView.swift */,
+				0BBB63EB2AE9324B00A47052 /* CurrentUserProfile.swift */,
 			);
 			path = Profile;
 			sourceTree = "<group>";
@@ -293,6 +296,7 @@
 				0BBB63E22AE86F9500A47052 /* IGTextFieldModifier.swift in Sources */,
 				0BBB63D12AE76FCB00A47052 /* MainTabView.swift in Sources */,
 				0BBB63D82AE7B53900A47052 /* FeedView.swift in Sources */,
+				0BBB63EC2AE9324B00A47052 /* CurrentUserProfile.swift in Sources */,
 				0BBB63D62AE77C8F00A47052 /* StackView.swift in Sources */,
 				0BBB63E62AE8746C00A47052 /* CreatePasswordView.swift in Sources */,
 			);
