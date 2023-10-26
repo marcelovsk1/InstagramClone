@@ -61,6 +61,7 @@
 		0BBB64352AEA2CC400A47052 /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BBB64342AEA2CC400A47052 /* AuthService.swift */; };
 		0BBB64392AEA2E4000A47052 /* ContentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BBB64382AEA2E4000A47052 /* ContentViewModel.swift */; };
 		0BBB643B2AEA3C6100A47052 /* RegistrationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BBB643A2AEA3C6100A47052 /* RegistrationViewModel.swift */; };
+		0BBB643D2AEADF5B00A47052 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BBB643C2AEADF5A00A47052 /* LoginViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -92,6 +93,7 @@
 		0BBB64342AEA2CC400A47052 /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
 		0BBB64382AEA2E4000A47052 /* ContentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewModel.swift; sourceTree = "<group>"; };
 		0BBB643A2AEA3C6100A47052 /* RegistrationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationViewModel.swift; sourceTree = "<group>"; };
+		0BBB643C2AEADF5A00A47052 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -322,6 +324,7 @@
 			children = (
 				0BBB64382AEA2E4000A47052 /* ContentViewModel.swift */,
 				0BBB643A2AEA3C6100A47052 /* RegistrationViewModel.swift */,
+				0BBB643C2AEADF5A00A47052 /* LoginViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -442,6 +445,7 @@
 				0BBB63F12AE9750000A47052 /* PostGridView.swift in Sources */,
 				0BBB63E82AE875F200A47052 /* CompleteSignUpView.swift in Sources */,
 				0BBB64392AEA2E4000A47052 /* ContentViewModel.swift in Sources */,
+				0BBB643D2AEADF5B00A47052 /* LoginViewModel.swift in Sources */,
 				0BBB643B2AEA3C6100A47052 /* RegistrationViewModel.swift in Sources */,
 				0BBB63F82AEA1D9F00A47052 /* UploadPostViewModel.swift in Sources */,
 				0BBB63F32AEA157B00A47052 /* ProfileHeaderView.swift in Sources */,
