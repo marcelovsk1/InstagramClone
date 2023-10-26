@@ -28,6 +28,7 @@
 		0BBB63EE2AE95EEB00A47052 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BBB63ED2AE95EEB00A47052 /* Post.swift */; };
 		0BBB63F12AE9750000A47052 /* PostGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BBB63F02AE9750000A47052 /* PostGridView.swift */; };
 		0BBB63F32AEA157B00A47052 /* ProfileHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BBB63F22AEA157B00A47052 /* ProfileHeaderView.swift */; };
+		0BBB63F62AEA18CA00A47052 /* UploadPostView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BBB63F52AEA18CA00A47052 /* UploadPostView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -53,6 +54,7 @@
 		0BBB63ED2AE95EEB00A47052 /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
 		0BBB63F02AE9750000A47052 /* PostGridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostGridView.swift; sourceTree = "<group>"; };
 		0BBB63F22AEA157B00A47052 /* ProfileHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileHeaderView.swift; sourceTree = "<group>"; };
+		0BBB63F52AEA18CA00A47052 /* UploadPostView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UploadPostView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -208,6 +210,7 @@
 		0BBB63CF2AE76D3C00A47052 /* UploadPost */ = {
 			isa = PBXGroup;
 			children = (
+				0BBB63F52AEA18CA00A47052 /* UploadPostView.swift */,
 			);
 			path = UploadPost;
 			sourceTree = "<group>";
@@ -293,6 +296,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0BBB63D32AE7744300A47052 /* ProfileView.swift in Sources */,
+				0BBB63F62AEA18CA00A47052 /* UploadPostView.swift in Sources */,
 				0BBB63B72AE75B8200A47052 /* ContentView.swift in Sources */,
 				0BBB63E42AE8716800A47052 /* CreateUserNameView.swift in Sources */,
 				0BBB63DA2AE7B54700A47052 /* FeedCell.swift in Sources */,
