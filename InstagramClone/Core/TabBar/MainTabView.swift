@@ -8,19 +8,29 @@
 import SwiftUI
 
 struct MainTabView: View {
+    @State private var selectedIndex = 0
     var body: some View {
-        TabView {
+        TabView(selection: $selectedIndex) {
             FeedView()
+                .onAppear {
+                    selectedIndex = 0
+                }
                 .tabItem {
                     Image(systemName: "house")
                 }
             
             SearchView()
+                .onAppear {
+                    selectedIndex = 0
+                }
                 .tabItem {
                     Image(systemName: "magnifyingglass")
                 }
             
             UploadPostView()
+                .onAppear {
+                    selectedIndex = 0
+                }
                 .tabItem {
                     Image(systemName: "plus.square")
                 }
