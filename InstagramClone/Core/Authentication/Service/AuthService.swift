@@ -17,7 +17,7 @@ class AuthService {
     static let shared = AuthService()
     
     init() {
-        self.userSession = Auth.auth().currentUser
+        Task { try await loadUserData }
     }
     
     @MainActor
@@ -49,6 +49,10 @@ class AuthService {
 
     func loadUserData() async throws {
         // You can load user-specific data here
+        self.userSession = Auth.auth().currentUser
+        guard let currentUid = userSession?.uid else { return }
+        let snapshot = try await Firestore.firestore().collection("users").document(currentUid).getDocument()
+        print("DEBUG: Snapshot data is \(snapshot.data())")
     }
     
     func signout() {
