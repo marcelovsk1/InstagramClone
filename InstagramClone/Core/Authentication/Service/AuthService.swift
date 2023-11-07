@@ -18,7 +18,7 @@ class AuthService {
     static let shared = AuthService()
     
     init() {
-        Task { try await loadUserData }
+        Task { try await loadUserData() }
     }
     
     @MainActor
@@ -26,6 +26,7 @@ class AuthService {
         do {
             let result = try await Auth.auth().signIn(withEmail: email, password: password)
             self.userSession = result.user
+            try await loadUserData()
         } catch {
             print("DEBUG: Failed to login user with error \(error.localizedDescription)")
         }
@@ -36,13 +37,10 @@ class AuthService {
         do {
             let result = try await Auth.auth().createUser(withEmail: email, password: password)
             self.userSession = result.user
-            print("DEBUG: Did create user...")
-            // You can add additional logic to update the user's profile, like setting their username.
             let changeRequest = result.user.createProfileChangeRequest()
             changeRequest.displayName = username
             try await changeRequest.commitChanges()
             await uploadUserData(uid: result.user.uid, username: username, password: password, email: email)
-//            print("DEBUG: Did upload user data...")
         } catch {
             print("DEBUG: Failed to create user with error \(error.localizedDescription)")
         }
@@ -50,7 +48,6 @@ class AuthService {
     
     @MainActor
     func loadUserData() async throws {
-        // You can load user-specific data here
         self.userSession = Auth.auth().currentUser
         guard let currentUid = userSession?.uid else { return }
         let snapshot = try await Firestore.firestore().collection("users").document(currentUid).getDocument()
@@ -64,6 +61,7 @@ class AuthService {
     
     private func uploadUserData(uid: String, username: String, password: String, email: String) async {
         let user = User(id: uid, username: username, password: password, email: email)
+        self.currentUser = user
         guard let encodedUser = try? Firestore.Encoder().encode(user) else { return }
         
         try? await Firestore.firestore().collection("users").document(user.id).setData(encodedUser)
