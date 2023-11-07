@@ -13,6 +13,7 @@ import Firebase
 class AuthService {
     
     @Published var userSession: FirebaseAuth.User?
+    @Published var currentUser: User?
     
     static let shared = AuthService()
     
@@ -41,7 +42,7 @@ class AuthService {
             changeRequest.displayName = username
             try await changeRequest.commitChanges()
             await uploadUserData(uid: result.user.uid, username: username, email: email)
-            print("DEBUG: Did upload user data...")
+//            print("DEBUG: Did upload user data...")
         } catch {
             print("DEBUG: Failed to create user with error \(error.localizedDescription)")
         }
@@ -52,7 +53,7 @@ class AuthService {
         self.userSession = Auth.auth().currentUser
         guard let currentUid = userSession?.uid else { return }
         let snapshot = try await Firestore.firestore().collection("users").document(currentUid).getDocument()
-        print("DEBUG: Snapshot data is \(snapshot.data())")
+        self.currentUser = try? snapshot.data(as: User.self)
     }
     
     func signout() {
