@@ -41,13 +41,14 @@ class AuthService {
             let changeRequest = result.user.createProfileChangeRequest()
             changeRequest.displayName = username
             try await changeRequest.commitChanges()
-            await uploadUserData(uid: result.user.uid, username: username, email: email)
+            await uploadUserData(uid: result.user.uid, username: username, password: password, email: email)
 //            print("DEBUG: Did upload user data...")
         } catch {
             print("DEBUG: Failed to create user with error \(error.localizedDescription)")
         }
     }
-
+    
+    @MainActor
     func loadUserData() async throws {
         // You can load user-specific data here
         self.userSession = Auth.auth().currentUser
@@ -61,8 +62,8 @@ class AuthService {
         self.userSession = nil
     }
     
-    private func uploadUserData(uid: String, username: String, email: String) async {
-        let user = User(id: uid, username: username, email: email)
+    private func uploadUserData(uid: String, username: String, password: String, email: String) async {
+        let user = User(id: uid, username: username, password: password, email: email)
         guard let encodedUser = try? Firestore.Encoder().encode(user) else { return }
         
         try? await Firestore.firestore().collection("users").document(user.id).setData(encodedUser)
